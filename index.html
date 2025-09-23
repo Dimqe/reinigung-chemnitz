@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lia Oksana - Ihre Hilfe in Chemnitz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <div class="icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h1>Lia Oksana</h1>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#start">Start</a></li>
+                    <li><a href="#services">Dienstleistungen</a></li>
+                    <li><a href="#about">Über mich</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="start">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Ihr verlässlicher Helfer in Chemnitz</h2>
+                    <p>Professionelle Reinigung und fürsorgliche Nachbarschaftshilfe, damit Ihr Alltag leichter wird.</p>
+                    <a href="#contact" class="btn">Kontakt aufnehmen</a>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-img-container">
+                       <div style="background: url('https://images.pexels.com/photos/4239147/pexels-photo-4239147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center center/cover; width: 100%; height: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meine Dienstleistungen</h2>
+                <p>Ich biete flexible Lösungen für ein sauberes Zuhause und Unterstützung im Alltag.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Reinigung</h3>
+                    <p>Gründliche und zuverlässige Reinigung Ihrer Wohnung oder Ihres Hauses nach Ihren Wünschen.</p>
+                    <button class="btn-secondary open-modal" data-modal="reinigungModal">Was ist inbegriffen?</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <h3>Nachbarschaftshilfe</h3>
+                    <p>Hilfe bei alltäglichen Aufgaben wie Einkaufen, Pflanzenpflege oder kleinen Erledigungen.</p>
+                    <button class="btn-secondary open-modal" data-modal="hilfeModal">Was ist inbegriffen?</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Über mich</h3>
+                    <p>Mein Name ist Lia Oksana. Ich lebe und arbeite in Chemnitz und biete meine Dienstleistungen zur Unterstützung im Haushalt an. Mit allen notwendigen Zertifikaten und langjähriger Erfahrung garantiere ich höchste Zuverlässigkeit und einen individuellen Ansatz für jeden Kunden.</p>
+                    <p>Mein Ziel ist es, Ihr Leben ein wenig leichter und angenehmer zu gestalten. Befreien Sie sich von alltäglichen Sorgen. Ich bin verantwortungsbewusst, einfach und ehrlich. Bestellen Sie jetzt eine Reinigung oder Hilfe zu Hause an, und Sie werden mit dem Ergebnis zufrieden sein!</p>
+                    <a href="#contact" class="btn btn-primary">Kontakt aufnehmen</a>
+                </div>
+                
+                <div class="about-img">
+                     <div style="background: url('https://images.pexels.com/photos/7131431/pexels-photo-7131431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center center/cover; width: 100%; height: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Nehmen Sie Kontakt mit mir auf</h3>
+                    <p>Haben Sie Fragen oder möchten Sie ein individuelles Angebot anfordern? Schreiben Sie mir eine Nachricht, ich stehe Ihnen gerne zur Verfügung.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:lia.oksana.service@gmail.com">lia.oksana.service@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Standort</h4>
+                                <p>Chemnitz, Sachsen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Anfrage senden</h3>
+                    <form action="https://formspree.io/f/your_form_id" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="Name" class="form-input" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" class="form-input" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="Dienstleistung" class="form-input" required>
+                                <option value="" disabled selected>Bitte Dienstleistung wählen...</option>
+                                <option value="Reinigung">Reinigung</option>
+                                <option value="Nachbarschaftshilfe">Nachbarschaftshilfe</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Nachricht" class="form-input" placeholder="Ihre Nachricht..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Anfrage senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer>
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Lia Oksana</h4>
+                <p>Ihre persönliche und zuverlässige Hilfe für einen sauberen Haushalt und Unterstützung im Alltag in Chemnitz.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Dienstleistungen</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Reinigung</a></li>
+                    <li><a href="#services">Nachbarschaftshilfe</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Informationen</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Impressum</a></li> <li><a href="#">Datenschutz</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Lia Oksana. Alle Rechte vorbehalten.</p>
+        </div>
+    </div>
+</footer>
+
+    <div id="reinigungModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Leistungen der Reinigung</h3>
+            <ul>
+                <li><b>Standardreinigung:</b> Nass- und Trockenreinigung der Böden. Staubwischen von Möbeln und Geräten.</li>
+                <li><b>Küche:</b> Abwaschen des Geschirrs, Reinigung der Spüle, des Herdes und der Arbeitsflächen.</li>
+                <li><b>Badezimmer:</b> Desinfektion der Sanitäranlagen, Reinigung der Duschkabine/Wanne und der Toilette.</li>
+                <li><b>Sonderwünsche:</b> Fensterreinigung oder Reinigung nach Renovierungen (nach Vereinbarung).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="hilfeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Leistungen der Nachbarschaftshilfe</h3>
+            <ul>
+                <li><b>Einkauf:</b> Ich gehe für Sie einkaufen, sei es für Lebensmittel, Haushaltswaren oder andere Dinge.</li>
+                <li><b>Kleinaufträge:</b> Hilfe mit Post, Abholung von Paketen und ähnlichen Erledigungen.</li>
+                <li><b>Pflanzenpflege:</b> Ich gieße Ihre Blumen während Ihrer Abwesenheit oder im Urlaub.</li>
+                <li><b>Sonstige Anfragen:</b> Andere kleine Aufgaben nach individueller Absprache.</li>
+            </ul>
+        </div>
+    </div>
+
+    <button id="openChatModalBtn" class="floating-chat-btn">
+    <i class="fas fa-comment-dots"></i>
+</button>
+
+<div id="chatModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3>Wählen Sie eine Kontaktmethode</h3>
+        <a href="https://wa.me/380990597746?text=Hallo,%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Dienstleistungen." target="_blank" class="modal-button whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Chat über WhatsApp
+        </a>
+        <a href="https://t.me/reiningungservisChemnitz?text=Hallo,%20ich%20interessiere%20mich%20f%C3%BCr%20Ihre%20Dienstleistungen." target="_blank" class="modal-button telegram-btn">
+            <i class="fab fa-telegram-plane"></i> Chat über Telegram
+        </a>
+    </div>
+</div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
