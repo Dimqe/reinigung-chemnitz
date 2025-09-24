@@ -30,7 +30,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 24px;
 }
 
 /* Header & Navigation */
@@ -138,7 +138,6 @@ nav {
     color: var(--white);
 }
 
-
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -170,6 +169,7 @@ nav {
     margin-bottom: 1.2rem;
     line-height: 1.2;
     font-weight: 700;
+   
 }
 
 .hero p {
@@ -374,7 +374,6 @@ nav {
 }
 
 /* Footer */
-/* Footer */
 footer {
     background-color: var(--primary-dark);
     color: var(--white);
@@ -486,15 +485,58 @@ footer {
 }
 
 
-/* Responsive Design */
+.icon{
+     width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+.icon.form{
+    width: 60%;
+    height: 60%;
+    color: #1A506F;
+}
+
+.icon.message{
+    color:#FFFFFF;
+}
+
+.icon.services{
+    width: 70%;
+    height: 70%;
+   
+}
+
+.icon.header{
+    width: 60%;
+    height: 60%;
+    color: #1A506F;
+}
+
+
 @media (max-width: 992px) {
     .hero-content, .about-content, .contact-container {
         flex-direction: column;
     }
+        .hero-img-container{
+        display: none;
+        opacity: 0;
+    }
+
+     .hero h2 {
+        font-size: 2.5rem;
+        width: 600px;
+    }
 }
 
 @media (max-width: 768px) {
-    .nav-links {
+
+
+      .container {
+    max-width: 768px; 
+    padding: 0 2rem;
+  }
+       .nav-links {
         display: none;
         position: absolute;
         top: 100%;
@@ -516,9 +558,12 @@ footer {
     .mobile-menu-btn {
         display: block;
     }
-    .hero h2 {
+
+      .hero h2 {
         font-size: 2.5rem;
+        width: auto;
     }
+   
 }
 
 /* Animation Effects */
@@ -526,7 +571,6 @@ footer {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 
 /* Floating Chat Button */
 .floating-chat-btn {
@@ -555,7 +599,10 @@ footer {
 
 /* Modal Buttons */
 .modal-button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     width: 100%;
     padding: 15px;
     margin: 10px 0;
@@ -569,3 +616,110 @@ footer {
 }
 .whatsapp-btn { background-color: #25D366; }
 .telegram-btn { background-color: #0088cc; }
+
+/* --- СТИЛІ ДЛЯ ПОВІДОМЛЕНЬ ФОРМИ --- */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--accent);
+    color: var(--white);
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 2000;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification.error {
+    background-color: #e74c3c;
+}
+
+
+
+body.legal-page {
+    background-color: var(--light);
+    padding: 20px;
+}
+
+.legal-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px 40px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.legal-container h1 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--light);
+    padding-bottom: 10px;
+}
+
+.legal-container h2 {
+    color: var(--primary-dark);
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.legal-container h3 {
+    color: var(--dark);
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.legal-container p, 
+.legal-container ul {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.legal-container ul {
+    padding-left: 20px;
+}
+
+.legal-container a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.legal-container a:hover {
+    text-decoration: underline;
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    background-color: var(--accent);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #3e8e41;
+}
+
+@media (max-width: 600px) {
+    body.legal-page {
+        padding: 10px;
+    }
+    .legal-container {
+        padding: 20px;
+    }
+    .legal-container h1 { font-size: 1.8rem; }
+    .legal-container h2 { font-size: 1.4rem; }
+}
